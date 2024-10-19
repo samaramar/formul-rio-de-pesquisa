@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Help us improve our LearnArt platform by completing the survey below!</p>
+    <form id="survey-form">
+        <fieldset>
+          <label for="name" id="name-label" >Full name:<input id="name" type="text" name="name" class="cas" required placeholder="Enter"/></label>
+          <label for="email" id="email-label"> Email:<input id="email" type="email" class="cas"required name="email" placeholder="Enter"/></label>
+          <label for="age"id="number-label">Age:<input id="number" class="cas"min="10" max="100" name="age" type="number" placeholder="Enter"/></label>
+ </fieldset>
+ <fieldset>       
+          <label>How did you hear about us?</label>
+            <label for="dropdown">
+              <select class="sel" name="dropdown" id="dropdown">
+                <option value="">(select one)</option>
+                <option value="1">Instagram</option>
+                <option value="2">Youtube</option>
+                <option value="3">Web Search</option>
+                <option value="4">LinkedIn</option>
+                <option value="5">Friends or family recommendation</option>
+                <option value="6">Other</option>
+              </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Would you recommend LearnArt?</label>
+            <label for="Y"><input type="radio" id="Y" name="recommendation"  class="R" checked value="y">Yes</label>
+            <label for="N"><input type="radio"id="N" name="recommendation" class="R" value="n">No</label>
+            <label for="I d know"><input type="radio"id="I d know"name="recommendation"class="R" value="k">I don't know</label>        
+       </fieldset>
+       <fieldset>
+          <label>What is your favorite feature of LearnArt?</legend>
+          <label for="favorite">
+            <select class="sel" name="favorite" id="favorite">
+              <option value="">(select one)</option>
+              <option value="a">Step-by-step tutorials</option>
+              <option value="b">Resource and reference library</option>
+              <option value="c">Personalized feedback from instructors</option>
+              <option value="d">Hands-on activities and interactive exercises</option>
+              <option value="e">Offline access to courses</option>
+            </select>
+          </label>
+       </fieldset>
+       <fieldset>
+         <label>What would you like to see improvemets?<small>(Check all that apply)</small></label>
+            <label for="Digital-Drawing-F"><input value="one"type="checkbox" name="courses" id="Digital-Drawing-F" class="inline">Digital Drawing Fundamentals</label>
+            <label for="V-Illustration"><input value="two" type="checkbox" name="courses" id="V-Illustration" class="inline">Vector Illustration</label>
+            <label for="2D-art"><input value="three" type="checkbox" name="courses" id="2D-art" class="inline">2D Digital Animation</label>
+            <label for="D-Photo"><input value="four"type="checkbox" name="courses" id="D-Photo" class="inline">Digital Photography</label>
+            <label for="3D-art"><input value="five" type="checkbox" name="courses" id="3D-art" class="inline">3D Modeling and Rendering</label>
+            <label for="Conceptual"><input value="six" type="checkbox" name="courses" id="Conceptual" class="inline">Conceptual Digital Art</label>
+            <label for="Editing"><input value="seven"type="checkbox" name="courses" id="Editing" class="inline">Video Editing and Visual Effects</label>
+            <label for="uiux"><input value="eight"type="checkbox" name="courses" id="uiux" class="inline">User Interface(UI/UX)Design</label>      
+       </fieldset>
+       <fieldset>
+           <label>Any comments or suggestions?</label>
+           <label for="comments"><textarea class="tex"name="comments" id="comments" rows="3" cols="30" placeholder=""></textarea></label>
+       </fieldset>
+       <input id="submit" type="submit" value="Submit">
+      
+
+
+
+    </form>
+
+    
+</body>
